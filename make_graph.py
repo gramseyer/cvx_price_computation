@@ -46,23 +46,6 @@ with open("cvxpy_results.csv", 'r') as f:
 	plot_one_experiment_line(res[20], "20 assets", "D", "full", "tab:red")
 	plot_one_experiment_line(res[50], "50 assets", "D", "full", "tab:green")
 
-#input_lines = [
-#	("Tâtonnement 10 assets", "sosp_tat_results", "o"),
-#	("Convex Solver 10 assets", "cvxpy_results", "+")
-#	]
-
-
-	#plt.scatter(meanx, meany, mark=mark)
-
-#plot_one_experiment_line("CVXPY, 10 Assets", "pricecomp_measurements/cvxpy_10", "D", "left", "tab:blue")
-#plot_one_experiment_line("cvxpy 20", "pricecomp_measurements/cvxpy_20", "D", "right", "tab:blue")
-#plot_one_experiment_line("cvxpy 50", "pricecomp_measurements/cvxpy_50", "D", "full", "tab:blue")
-#plot_one_experiment_line("T\^atonnement, 10 Assets", "pricecomp_measurements/tatonnement_10", "o", "left", "tab:red")
-#plot_one_experiment_line("T\^atonnement, 20 Assets", "pricecomp_measurements/tatonnement_20", "o", "right", "tab:red")
-#plot_one_experiment_line("T\^atonnement, 50 Assets", "pricecomp_measurements/tatonnement_50", "o", "full", "tab:red")
-#for (legend_name, filename, mark) in input_lines:
-#	plot_one_experiment_line(legend_name, filename, mark)
-
 plt.xscale('log')
 plt.yscale('log')
 plt.axis([100,50000,0.001, 300])
