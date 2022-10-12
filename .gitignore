@@ -1,6 +1,9 @@
 cvxpy_results.csv
 cvxpy_graph.png
 
+# mac
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
