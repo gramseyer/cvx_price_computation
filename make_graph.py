@@ -25,7 +25,7 @@ def plot_one_experiment_line(results, line_name, mark, fill, color):
 		meanx.append(m)
 		meany.append(time)
 
-	sns.lineplot(meanx, meany, marker=MarkerStyle(mark, fillstyle=fill), color=color, label=line_name, markersize=10)#, edgecolor="black")
+	sns.lineplot(x=meanx, y=meany, marker=MarkerStyle(mark, fillstyle=fill), color=color, label=line_name, markersize=10)#, edgecolor="black")
 
 
 with open("cvxpy_results.csv", 'r') as f:
